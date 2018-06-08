@@ -8,7 +8,7 @@
 	var DelphiForm = require('delphiform');
 ```
 
-## v0.9.0
+## v1.0.0
 Реализована 1 форма.
 
 - form1:

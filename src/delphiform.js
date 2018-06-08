@@ -1,5 +1,5 @@
 /** Delphi Form v1.0.0
- * index.js
+ * 
  *
  * Copyright (c) 2018-present, 
  * by Siarhei Dudko (admin@sergdudko.tk).

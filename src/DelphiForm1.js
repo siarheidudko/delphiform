@@ -1,5 +1,5 @@
 /** Delphi Form v1.0.0
- * index.js
+ * 
  *
  * Copyright (c) 2018-present, 
  * by Siarhei Dudko (admin@sergdudko.tk).
@@ -36,6 +36,35 @@ module.exports = class DelphiForm1 extends React.PureComponent{
 					for(let i = 0; i < self.props.selected.length; i++){
 						if(typeof(self.props.store[self.props.selected[i]]) !== 'undefined'){
 							this_store['SelectedArr'].push(_.clone(self.props.selected[i]));
+						}
+					}
+				}				
+				for(let key in StoreArrobject){
+					this_store['ObjSearch'][key] = StoreArrobject[key].toUpperCase();
+					if(this_store['SelectedArr'].indexOf(key) === -1){
+						this_StoreArr.push(key);
+					}
+				}
+				this_store['StoreArr'] = _.clone(this_StoreArr);
+				this_store['SearchArr'] = _.clone(this_StoreArr);
+				self.setState(this_store);
+			}			
+		} catch(e){
+			window.console.log(e);
+		};
+	}
+	
+	componentWillReceiveProps(nextProps){ //при обновлении пропсов перезагружаем состояние компонента
+		try{
+			let self = this;
+			if(typeof(nextProps.store) === 'object'){
+				let this_StoreArr = [],
+				this_store = {SelectedArr:[], ObjSearch:{}},
+				StoreArrobject = _.clone(nextProps.store);				
+				if(typeof(nextProps.selected) === 'object'){
+					for(let i = 0; i < nextProps.selected.length; i++){
+						if(typeof(nextProps.store[nextProps.selected[i]]) !== 'undefined'){
+							this_store['SelectedArr'].push(_.clone(nextProps.selected[i]));
 						}
 					}
 				}				

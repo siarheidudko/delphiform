@@ -1,4 +1,4 @@
-/** Delphi Form v1.0.0
+/** Delphi Form v1.0.1
  * 
  *
  * Copyright (c) 2018-present, 
@@ -76,6 +76,9 @@ module.exports = class DelphiForm1 extends React.PureComponent{
 				}
 				this_store['StoreArr'] = _.clone(this_StoreArr);
 				this_store['SearchArr'] = _.clone(this_StoreArr);
+				if(typeof(self.props.callback) === 'function'){
+					self.callback = self.props.callback;
+				}
 				self.setState(this_store);
 			}			
 		} catch(e){

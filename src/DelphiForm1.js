@@ -1,4 +1,4 @@
-/** Delphi Form v1.0.2
+/** Delphi Form v1.0.3
  * 
  *
  * Copyright (c) 2018-present, 
@@ -57,8 +57,8 @@ module.exports = class DelphiForm1 extends React.PureComponent{
 	componentWillReceiveProps(nextProps){ //при обновлении пропсов перезагружаем состояние компонента
 		try{
 			let self = this;
-			if(typeof(self.props.callback) === 'function'){
-				self.callback = self.props.callback;
+			if(typeof(nextProps.callback) === 'function'){
+				self.callback = nextProps.callback;
 			}
 			if(typeof(nextProps.store) === 'object'){
 				let this_StoreArr = [],

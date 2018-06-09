@@ -1,6 +1,6 @@
 {
 	"name": "delphiform",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Forms for React 16+",
 	"main": "./umd/delphiform.js",
 	"dependencies": {

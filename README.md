@@ -8,7 +8,7 @@
 	var DelphiForm = require('delphiform');
 ```
 
-## v1.0.0
+## v1.0.3
 Реализована 1 форма.
 
 - form1:
@@ -109,4 +109,3 @@
 		name="Тестовая форма" 
 		callback={function(data){window.alert(data);}} />
 	```
-

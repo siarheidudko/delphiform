@@ -1,5 +1,12 @@
-﻿# Формы для React 16+
+﻿  
+# Формы для React 16+  
 Веб-формы для react. Попросил меня как-то коллега сделать форму "как в Delphi" - я и сделал. В перспективе будет дополняться, в зависимости от моей лени.
+  
+[![npm](https://img.shields.io/npm/v/delphiform.svg)](https://www.npmjs.com/package/delphiform)
+[![npm](https://img.shields.io/npm/dy/delphiform.svg)](https://www.npmjs.com/package/delphiform)
+[![NpmLicense](https://img.shields.io/npm/l/delphiform.svg)](https://www.npmjs.com/package/delphiform)
+![GitHub last commit](https://img.shields.io/github/last-commit/siarheidudko/delphiform.svg)
+![GitHub release](https://img.shields.io/github/release/siarheidudko/delphiform.svg)
 
 Подключение:
 ```
